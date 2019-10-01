@@ -229,4 +229,7 @@ public abstract class Enchantment implements Cloneable {
         String[] words = set.stream().toArray(String[]::new);
         return String.join(" ", words);
     }
+    if (enchant >= this.getMaxLevel()) {
+  enchant = 5;
+}
 }
