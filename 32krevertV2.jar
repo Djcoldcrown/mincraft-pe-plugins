@@ -1,0 +1,11 @@
+cn.nukkit.item.enchantment;
+/**made for 2b2tmcpe
+*author djcoldcrown
+*use on places only with my permission
+*/public class Program
+{
+	public static void main(String[] args) {
+		if (enchant >= this.getMaxLevel()) {
+  enchant = 5;
+	}
+}
