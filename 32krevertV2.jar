@@ -1,9 +1,27 @@
+package:2b2tmcpe.coldcrown.32krevert;
 import:cn.nukkit.item.enchantment;
+public class main {
 /**made for 2b2tmcpe
 *author djcoldcrown
 *use on places only with my permission
-*/
+*/  
+@Override
+  public void onEnable() {
+    this.getLogger().info("32ks are dead now");
+    this.getServer().getPluginManager().registerEvents(new EventListener(), this);
+    this.saveDefaultConfig();
+  }
+
+  @Override
+  public void onDisable() {
+    this.getLogger().info("32ks can be made again");
+  }
+
+  @Override
+  public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+    return true;
+  }
 		if (enchant >= this.getMaxLevel()) {
   enchant = 5;
 	}
-
+}
